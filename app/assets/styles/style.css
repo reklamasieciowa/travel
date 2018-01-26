@@ -1,0 +1,18 @@
+$mainBlue: #2f5572;
+
+body {
+	background: $mainBlue;
+	padding: 15px;
+	margin-top: 5px;
+	columns: 400px 2;
+}
+
+.box {
+	a {
+		color: $mainBlue;
+	}
+
+	p {
+		color: #ff0000;
+	}
+}
