@@ -1,18 +1,5 @@
-$mainBlue: #2f5572;
-
-body {
-	background: $mainBlue;
-	padding: 15px;
-	margin-top: 5px;
-	columns: 400px 2;
-}
-
-.box {
-	a {
-		color: $mainBlue;
-	}
-
-	p {
-		color: #ff0000;
-	}
-}
+@import "normalize.css"; /*Po prostu nazwa pliku, wyszuka sobie w node-modules*/
+@import "base/_variables";
+@import "base/_global";
+@import "modules/_large-hero";
+@import "modules/_btn";

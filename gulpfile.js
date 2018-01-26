@@ -3,7 +3,8 @@ watch = require('gulp-watch'),
 postcss = require('gulp-postcss'),
 autoprefixer = require('autoprefixer'),
 cssvars = require('postcss-simple-vars'),
-nested = require('postcss-nested');
+nested = require('postcss-nested'),
+cssImport = require('postcss-import');
 
 gulp.task('default', function(){
 	console.log('ok');
@@ -17,7 +18,7 @@ gulp.task('styles', function(){
 	//plik żródłowy, plik docelowy temp, gulp.src() jest asynchroniczna
 	
 	return gulp.src('./app/assets/styles/style.css') //plik żródłowy
-		.pipe(postcss([cssvars, nested, autoprefixer])) //postcss zamiast sass/less
+		.pipe(postcss([cssImport, cssvars, nested, autoprefixer])) //postcss zamiast sass/less
 		.pipe(gulp.dest('./app/temp/styles')); //folder docelowy temp
 });
 
