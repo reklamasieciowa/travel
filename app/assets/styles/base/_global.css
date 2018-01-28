@@ -7,3 +7,29 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	color: $accent;
+}
+
+.generic-content-container {
+	p {
+	line-height: 1.65;
+	margin: 1.8rem 0;
+	}
+
+	@mixin atSmall {
+		p {
+			font-size: 1.125rem;
+		}
+	}
+
+	p a {
+		font-weight: 700;
+		text-decoration: none;
+	}
+}
