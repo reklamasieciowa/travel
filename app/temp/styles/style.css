@@ -543,7 +543,7 @@ a {
 	}
 	}
 
-@media (min-width: 1200px) {
+@media (min-width: 1010px) {
 
 .large-hero__subtitle {
 			font-size: 2.9rem
@@ -713,19 +713,20 @@ a {
 		padding-top: 80px;
 	}
 
-.row--gutters {
-			padding-right: -65px;
-		}
-
 .row--gutters > div {
 		padding-right: 65px;
 	}
 
 .row--gutters-small > div {
-		padding-right: 45px;
+		padding-right: 0;
 	}
 
 @media (min-width: 800px) {
+
+		.row--gutters-small > div {
+			padding-right: 45px;
+		}
+
 		.row__b-margin-until-medium {
 			margin-bottom: 0;
 		}
@@ -869,10 +870,6 @@ a {
 		margin-bottom: 0
 
 }
-	}
-
-.testimonial:last-child {
-		margin-bottom: 0;
 	}
 
 .testimonial__photo {
