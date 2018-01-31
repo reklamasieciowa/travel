@@ -5,15 +5,24 @@
 		margin-bottom: 1rem;
 	}
 
-	&--gutters {
-			padding-right: -65px;
-		}
+	&--t-padding {
+		padding-top: 80px;
+	}
 
 	&--gutters > div {
 		padding-right: 65px;
 	}
 
+	&--gutters-small > div {
+		padding-right: 0;
+	}
+
 	@mixin atMedium {
+
+		&--gutters-small > div {
+			padding-right: 45px;
+		}
+
 		&__b-margin-until-medium {
 			margin-bottom: 0;
 		}
@@ -42,6 +51,18 @@
 		&__medium-8-smaller {
 			float: left;
 			width: 63%;
+		}
+	}
+
+	/* Begin row--equal-height-at-medium */
+	&--equal-height-at-medium {
+		@mixin atMedium {
+			display: flex;
+		}
+
+		& > div {
+			float: none;
+			display: flex;
 		}
 	}
 }
