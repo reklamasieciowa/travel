@@ -1,4 +1,4 @@
-@import "normalize.css"; /*Po prostu nazwa pliku, wyszuka sobie w node-modules*/
+@import "normalize.css";
 @import "base/_variables";
 @import "base/_mixins";
 @import "base/_global";
@@ -11,3 +11,4 @@
 @import "modules/_section-title";
 @import "modules/_feature-item";
 @import "modules/_testimonial";
+@import "modules/_sprite";

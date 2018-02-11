@@ -23,6 +23,10 @@
 		}
 	}
 
+	& span {
+		display: inline-block;
+	}
+
 	&--blue {
 		color: $mainColor;
 	}
