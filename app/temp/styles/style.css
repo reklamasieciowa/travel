@@ -780,6 +780,20 @@ a {
 	text-align: center;
 }
 
+.section-title span {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+@media (min-width: 530px) {
+
+.section-title span {
+			margin-left: 0;
+			display: inline-block
+	}
+	}
+
 @media (min-width: 530px) {
 
 .section-title {
@@ -806,20 +820,33 @@ a {
 	}
 	}
 
-.section-title span {
-		display: inline-block;
-	}
-
 .section-title--blue {
 		color: #2f5572;
 	}
 
 .feature-item {
 	position: relative;
-	
 	padding-bottom: 2.5rem;
 	
 }
+
+.feature-item span {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: .6rem;
+	}
+
+@media (min-width: 530px) {
+
+.feature-item span {
+			position: absolute;
+			left: 0;
+			margin-left: 0;
+			margin-bottom: 0;
+			display: inline-block
+	}
+	}
 
 @media (min-width: 530px) {
 
