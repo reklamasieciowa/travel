@@ -55,7 +55,7 @@
 	}
 
 	/* Begin row--equal-height-at-medium */
-	&--equal-height-at-medium {
+	.flexbox &--equal-height-at-medium {
 		@mixin atMedium {
 			display: flex;
 		}
